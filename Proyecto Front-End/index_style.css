@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+*{
+   margin: 0;
+   padding: 0; 
+}
+
+body{
+   background-color: rgb(224, 196, 172);
+   background-image: url("img/ovillos fondo 2.jpg");
+   font-family: 'Manjari', sans-serif;
+}
+
+.title h1{
+   background-color: rgb(224, 196, 172);
+   margin: 20px 90px;
+   padding: 20px 0;
+   text-align: center;
+   font-size: 2.9em;
+   animation: title 3s linear 0s 1;
+}
+
+@keyframes title{
+   0% {width: 30%; background-color: rgba(224, 196, 172, 0.233);}
+   50%{width: 60%;background-color: rgba(224, 196, 172, 0.63);}
+   100%{width: 85%;background-color: rgb(224, 196, 172);}
+}
+
+.nav ul{
+   background-color: rgba(3, 3, 3, 0.801);
+   list-style-type: none;
+   width: 90%;
+   max-width: 1000px;
+   margin: 2em auto;
+   padding: 5px;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+}
+
+.nav ul li a{
+   color: white;
+}
+
+.container {
+   width: 95%;
+   max-width: 1000px;
+   margin: 1.6em auto;
+   display: grid;
+   gap: 1.9em;
+   grid-template-columns: repeat(5, 1fr);
+}
+
+.container .main,
+.container .sidebar {
+   background-color: rgb(224, 196, 172);
+   padding: 15px;
+}
+
+.container .main{
+   grid-column: 1/5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 2s ease;
+}
+
+.main img:hover{
+   -webkit-transform:scale(0.9);transform:scale(0.9);
+   overflow:hidden;
+}
+
+.main .peluches h4,
+.main .peluches img,
+.main .tops h4,
+.main .tops img{
+padding: 10px 60px;
+text-align: center;
+}
+
+.container .sidebar{
+   grid-column: 5;
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   flex-direction: column;
+}
+
+.sidebar .food,
+.sidebar .business{
+   padding: 20px 5px;
+   text-align: center;
+}
+
+footer{
+   padding: 10px;
+   text-align: start;
+}
+
+
+
+

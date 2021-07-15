@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(224, 196, 172);
+    background-image: url("img/ovillos fondo 2.jpg");
+    font-family: 'Manjari', sans-serif;
+}
+
+/*header*/
+.title h1{
+    background-color: rgb(224, 196, 172);
+    margin: 20px 90px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+    animation: title 3s linear 0s 1;
+}
+
+@keyframes title{
+    0% {width: 30%; background-color: rgba(224, 196, 172, 0.233);}
+    50%{width: 60%;background-color: rgba(224, 196, 172, 0.63);}
+    100%{width: 85%;background-color: rgb(224, 196, 172);}
+ }
+
+.container{
+    background-color: rgb(224, 196, 172);
+    width: 95%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+.container > .header,
+.container > .content,
+.container > .sidebar,
+.container > .footer,
+.container > div {
+    background-color: rgb(224, 196, 172);
+    padding: 20px ;
+}
+
+.container .header,
+.container .footer {
+    grid-column: 1/6;
+    background-color: rgba(3, 3, 3, 0.801);
+    color: white;
+    text-align: start;
+}
+
+.container .content{
+    grid-column: span 2;
+}
+
+.content .article p{
+padding-top: 10px;
+text-align: center;
+}
+
+.container .sidebar{
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .footer h4,
+.container .footer p {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-top: 10px;
+}
+.container .footer div {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container .footer div .instagram,
+.container .footer div .facebook{
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        text-align: center;
+    }
+    .container .content {
+        grid-column: 1/-1;
+    }
+    .container .sidebar{
+        grid-column: 1/-1;
+    }
+}

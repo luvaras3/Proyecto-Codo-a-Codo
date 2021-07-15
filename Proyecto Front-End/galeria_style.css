@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(224, 196, 172);
+    background-image: url("img/ovillos fondo 2.jpg");
+    font-family: 'Manjari', sans-serif;
+}
+
+.title h1{
+    background-color: rgb(224, 196, 172);
+    margin: 20px 90px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+    animation: title 3s linear 0s 1;
+}
+
+@keyframes title{
+    0% {width: 30%; background-color: rgba(224, 196, 172, 0.233);}
+    50%{width: 60%;background-color: rgba(224, 196, 172, 0.63);}
+    100%{width: 85%;background-color: rgb(224, 196, 172);}
+ }
+
+.main {
+    background-color: transparent;
+    width: 95%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+}
+
+.dino h2,
+.dino div,
+.dino p,
+.top h2,
+.top div,
+.top p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.dino h2,
+.dino p,
+.top h2,
+.top p{
+    background-color: rgb(224, 196, 172);
+    border: black double;
+    margin: 5px;
+    text-align: center;
+}
+
+p{
+    font-size: large;
+}
+
+.frente,
+.dorso{
+    margin: 5px;
+}

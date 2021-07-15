@@ -1,0 +1,15 @@
+
+body{
+    background-color: rgb(224, 196, 172);
+    background-image: url("img/ovillos fondo 2.jpg");
+    font-family: 'Manjari', sans-serif;
+}
+
+.text-center h1{
+    background-color: rgb(224, 196, 172);
+    font-size: 2.9em;
+}
+
+.form-label{
+    font-weight: bold;
+}
